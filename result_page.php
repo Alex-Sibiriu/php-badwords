@@ -1,7 +1,7 @@
 <?php
 
-  $paragraph = $_POST['paragraph'];
-  $banned_word = $_POST['banned_word'];
+  $paragraph = trim($_POST['paragraph']);
+  $banned_word = trim($_POST['banned_word']);
   
   $length_paragraph = strlen($paragraph);
   $censored_paragraph = str_replace($banned_word,'***', $paragraph);
